@@ -12,17 +12,12 @@ Then implement the algorithm in Python. Put your algorihmic description as a com
 #
 
 
-num_int = int(input("Input a number: "))    # Do not change this line
+max_int = 0
+while True :
+    num_int = int(input("Enter a number: "))
+    if num_int < 0:
+        break
+    max_int = max(num_int, max_int)
 
-num = 0
+print("The maximum is", max_int)   # Do not change this line
 
-while num_int > 0 or num > 0:
-    num = int(input("Input a number: "))
-    if num_int > num:
-        max_int = num_int
-    num = int(input("Input a number: "))
-
-else:
-    print ("You entered a negative integer")
-
-print("The maximum is", max_int)    # Do not change this line
